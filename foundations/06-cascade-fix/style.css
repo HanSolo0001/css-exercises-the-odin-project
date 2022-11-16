@@ -1,34 +1,53 @@
+/* 
+
+There are a few elements that have some sort of specificity or rule order issue in the provided CSS file. It's up to you to figure out what issue is affecting an element, and how to fix it. You can edit the CSS file by adding, removing, or editing selectors for a declaration block, or by moving declaration blocks around. **You should not edit the HTML file or any of the actual styles in the CSS**.
+
+<body>
+    <p class="para">I'm just a paragraph with red text!</p>
+    <p class="para small-para">I'm a smaller paragraph, also with red text!</p>
+
+    <button id="confirm-button" class="button confirm">Confirm</button>
+    <button id="cancel-button" class="button cancel">Cancel</button>
+
+    <div class="text">I'm a div with green text!</div>
+    <div class="text">I'm a div with green text and a child div!
+      <div class="text child">I'm a smaller child div with red text.</div>
+    </div>
+  </body>
+
+*/
+
 .para,
 .small-para {
-  color: hsl(0, 100%, 50%);
-}
-
-.small-para {
-  font-size: 14px;
+    color: hsl(0, 100%, 50%);
 }
 
 .para {
-  font-size: 22px;
+    font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+.small-para {
+    font-size: 14px;
+}
+
+.button.confirm {
+    background: green;
+    color: white;
+    font-weight: bold;
+}
 
 .button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-}
-
-.child {
-  color: red;
-  font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
 div.text {
-  color: green;
-  font-size: 22px;
+    color: green;
+    font-size: 22px;
+}
+
+.text.child {
+    color: red;
+    font-size: 14px;
 }

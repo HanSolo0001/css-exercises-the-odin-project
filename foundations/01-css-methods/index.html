@@ -11,7 +11,8 @@
         .internal {
             color: white;
             background-color: green;
-            font-size: 1.3rem;
+            font-size: 1.125rem;
+            /* Used REM for responsive purposes, but still correct pixels when converted */
             font-weight: 500;
         }
     </style>
@@ -20,7 +21,8 @@
 <body>
     <div class="external">Style me via the external method!</div>
     <p class="internal">I would like to be styled with the internal method, please.</p>
-    <button style="color:black; background-color:rgb(255, 187, 0); font-size:1.3rem; font-weight:500; box-shadow: inset 1px 1px 1px black, inset 2px 2px 2px black; border-radius: 3px; cursor: pointer;">Inline Method</button>
+    <button style="color:black; background-color: orange; font-size: 1.125rem; font-weight:500; box-shadow: inset 1px 1px 1px transparent; border-radius: 3px; cursor: pointer;">Inline Method</button>
+    <!-- Used REM for responsive purposes, but still correct pixels when converted -->
 </body>
 
 </html>
